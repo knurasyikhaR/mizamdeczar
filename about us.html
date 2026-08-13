@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About Us - Mizam De Czar</title>
+
+    <link
+      rel="shortcut icon"
+      href="./gambar/logo (2).png"
+      type="image/x-icon"
+    />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- FEATHER ICON -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- =====================================================
+    NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-sm fixed-top" id="navbar">
+      <div class="container">
+        <!-- LOGO -->
+        <a href="home.html" class="navbar-brand" id="logo">
+          <img src="./gambar/logo (2).png" alt="Mizam De Czar Logo" />
+
+          <span class="website-name"> Mizam De Czar </span>
+        </a>
+
+        <!-- HAMBURGER -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span>
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link"> Home </a>
+            </li>
+            <!-- ABOUT US -->
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a href="about us.html" class="dropdown-item"> Who We Are </a>
+                </li>
+
+                <li>
+                  <a href="history.html" class="dropdown-item"> Our History </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ORDERS -->
+            <li class="nav-item">
+              <a href="orders.html" class="nav-link"> Orders </a>
+            </li>
+
+            <!-- OUR TEAM -->
+            <li class="nav-item">
+              <a href="our team.html" class="nav-link"> Our Team </a>
+            </li>
+
+            <!-- CONTACT -->
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =====================================================
+    ABOUT US
+    ====================================================== -->
+
+    <section id="about">
+      <div class="container">
+        <!-- =================================================
+        ROW 1 : FOTO + ABOUT US
+        ================================================== -->
+
+        <div class="row about-intro">
+          <!-- FOTO -->
+          <div class="about-col-1">
+            <img
+              src="./gambar/fotbar.jpg"
+              alt="Mizam De Czar"
+              class="fotbar-image"
+            />
+          </div>
+
+          <!-- ABOUT TEXT -->
+          <div class="about-col-2">
+            <h1 class="sub-title"><span>About</span> Us</h1>
+
+            <p class="description">
+              Kita adalah satu dalam ikatan seragam putih abu. Melepas tawa
+              berbagi duka, mengoyak asa dikala kita bertemu. Masih tentang
+              titik temu yang masih dalam semoga. Walau kita banyak beradu,
+              namun tetap jua satu. Cerita ini masih sama, pertemanan lama yang
+              terikat erat hingga fajar menjemput untuk kembali bersandiwara dan
+              menceritakan cerita baru. Kita... memahami arti kebersamaan,
+              memahami arti kebahagiaan, dan memahami arti kesederhanaan. Inilah
+              kami,
+
+              <strong>
+                "Mizam De Czar (The Mighty Czar Standing Fii Ufuqi Al 'Alamiah)
+                Pemimpin yang Berdiri di atas Cakrawala Dunia".
+              </strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- =================================================
+        ROW 2 : FILOSOFI + HERO IMAGE
+        ================================================== -->
+
+        <div class="row philosophy-row">
+          <!-- ===============================================
+          FILOSOFI
+          ================================================ -->
+
+          <div class="about-col-2 philosophy-content">
+            <!-- TAB TITLE -->
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('gambar', this)"
+              >
+                Filosofi Gambar
+              </p>
+
+              <p class="tab-links" onclick="opentab('warna', this)">
+                Filosofi Warna
+              </p>
+            </div>
+
+            <!-- ===========================================
+            FILOSOFI GAMBAR
+            ============================================ -->
+
+            <div class="tab-contents active-tab" id="gambar">
+              <p>
+                <strong> Daun Semanggi: </strong>
+
+                Berjumlah 4 helai dipercaya sebagai pembawa keberuntungan dan
+                setiap helai daun melambangkan
+                <i>hope</i> (harapan) dan <i>love luck</i> (keberuntungan).
+              </p>
+
+              <p>
+                <strong> Kompas: </strong>
+
+                Mimpi kita bukan hanya satu titik kecil, tapi mimpi kita seluas
+                langit dan bumi.
+              </p>
+
+              <p>
+                <strong> Lingkaran: </strong>
+
+                Bersatu, melindungi, dan kekekalan dalam ikatan sebagai
+                pemimpin.
+              </p>
+
+              <p>
+                <strong> Garis Lurus: </strong>
+
+                Ketegasan dan keseriusan dalam menggapai mimpi dan memiliki 28
+                garis lurus yang menandakan jumlah pemimpin yang lahir pada
+                angkatan Mizam De Czar.
+              </p>
+            </div>
+
+            <!-- ===========================================
+            FILOSOFI WARNA
+            ============================================ -->
+
+            <div class="tab-contents" id="warna">
+              <p>
+                <strong> Hitam: </strong>
+
+                Ketegasan, profesional, dan kredibilitas sebuah anggota.
+              </p>
+
+              <p>
+                <strong> Putih: </strong>
+
+                Kebebasan, keterbukaan, dan bebas dari apapun.
+              </p>
+
+              <p>
+                <strong> Emas: </strong>
+
+                Optimisme dan kegembiraan kepada orang-orang yang melihatnya.
+              </p>
+            </div>
+          </div>
+
+          <!-- ===============================================
+          HERO IMAGE
+          ================================================ -->
+
+          <div class="about-col-1 philosophy-image">
+            <img
+              src="./gambar/hero.jpg"
+              alt="Filosofi Mizam De Czar"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+    FOOTER
+    ====================================================== -->
+
+    <footer id="footer">
+      <div class="f-content">
+        <!-- FOOTER LOGO -->
+        <div class="f-logo">
+          <img src="./gambar/logomizam.png" alt="Mizam De Czar Logo" />
+        </div>
+
+        <!-- DESCRIPTION -->
+        <p>Generation VII of Manba'ul 'Ulum 2 Islamic Boarding School</p>
+
+        <!-- SOCIAL MEDIA -->
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/mizam_de.czar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram Mizam De Czar"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <br />
+
+      <!-- COPYRIGHT -->
+      <div class="c-content">
+        &copy; Copyright 2024 | Mizam De Czar
+
+        <br />
+
+        <span>
+          Create by
+
+          <a href="home.html"> Mizam De Czar </a>
+        </span>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+    TAB SCRIPT
+    ====================================================== -->
+
+    <script>
+      function opentab(tabname, element) {
+        // Semua isi tab
+        const contents = document.querySelectorAll(".tab-contents");
+
+        // Semua tombol tab
+        const links = document.querySelectorAll(".tab-links");
+
+        // Hilangkan active dari semua content
+        contents.forEach((content) => {
+          content.classList.remove("active-tab");
+        });
+
+        // Hilangkan active dari semua link
+        links.forEach((link) => {
+          link.classList.remove("active-link");
+        });
+
+        // Aktifkan tab yang dipilih
+        document.getElementById(tabname).classList.add("active-tab");
+
+        // Aktifkan tombol yang dipilih
+        element.classList.add("active-link");
+      }
+    </script>
+
+    <!-- MAIN SCRIPT -->
+    <script src="script.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl5Q5P1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const revealElements = document.querySelectorAll(
+          "#about .row, #our-history .history-card, .order .card-order, .our_team .card, .contact .info, #contactForm",
+        );
+
+        revealElements.forEach((element) => {
+          element.classList.add("reveal");
+        });
+
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.12,
+          },
+        );
+
+        revealElements.forEach((element) => {
+          revealObserver.observe(element);
+        });
+      });
+    </script>
+  </body>
+</html>
