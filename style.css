@@ -2631,6 +2631,7 @@ select:focus-visible {
   .fotbar-image,
   .hero-image {
     height: 300px;
+     border-radius: 18px;
   }
 
   .sub-title {
